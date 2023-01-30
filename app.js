@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 })
 
 mongoose.set('strictQuery', false)
-mongoose.connect(process.env.CONNECTION_URL, () => {
+mongoose.connect("mongodb+srv://srsmatrimony-demo:srsmatrimony-demo@cluster0.ooxic0s.mongodb.net/srsmatrimony-demodb?retryWrites=true&w=majority", () => {
     console.log("database connected successfully")
 })
 
